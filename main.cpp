@@ -4,7 +4,7 @@
 #include <fstream>
 #include <unistd.h>
 #include <stdio.h>
-#include "start.hpp"
+#include "oscfg.hpp"
 /* using std::cout; using std::cin;
 using std::endl; using std::string;
 namespace fs = std::filesystem;

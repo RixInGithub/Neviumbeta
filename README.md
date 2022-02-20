@@ -22,3 +22,5 @@ cp start.hpp ~ # Required
 cd ~
 gcc main.cpp # For auto-running Nevium
 ```
+
+<sup>From: [System requirements and download](https://nevium.repl.co/requirements/)</sup>

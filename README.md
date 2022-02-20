@@ -1,5 +1,5 @@
 # Nevium
-[![run on repl.it](https://camo.githubusercontent.com/dc2fe3e1d2b233b1980ffbbcc4f6149d2ebd5bea5b289f8529752b1fde7e6126/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f706c69626974686572382f323034382e637070)](https://replit.com/@nevium/os)
+[![run on repl.it](https://camo.githubusercontent.com/dc2fe3e1d2b233b1980ffbbcc4f6149d2ebd5bea5b289f8529752b1fde7e6126/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f706c69626974686572382f323034382e637070)](https://replit.com/github/RixInGithub/Neviumbeta)
 
 If you want to install Nevium on your PC, then this is a good place for you to belong!
 

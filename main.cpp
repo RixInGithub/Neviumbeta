@@ -58,9 +58,9 @@ int main() {
           cout << "Can't compare answer. Please try again later.";
           return 0;
       } else if (isOwner != "true")
-        std::cout << "Can't migrate, not the owner.";
+        cout << "Can't migrate, not the owner.";
     } else if (cmd != "migrate") { // Here is the error
-      std::cout << "No command found.";
+      cout << "No command found.";
     }
   }
 }

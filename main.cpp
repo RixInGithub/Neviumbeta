@@ -11,58 +11,12 @@ namespace fs = std::filesystem;
 using fs::current_path;*/
 using namespace std; // Oh, okay... I have this line.
 // string allCmds[1] = {"migrate"};
-string isOwner = getenv("isOwner");
-string cmd = "";
-char answer1 = '?';
 
 int main() {
+  system("clear");
   start();
   while (true) {
-    cout << "\033[0;32m" << ") ";
-    cin >> cmd;
-    
-    /* switch(cmd) {
-      case "migrate":
-        
-        switch(isOwner) {
-          case "true":
-            std::string answer1;
-            std::cout << "Are you sure? [y/n] ";
-            
-            switch(answer1) {
-              case "y":
-                std::cout << "No new updates";
-                break;
-              case "n":
-                break;
-              default:
-                std::cout << "Can't compare answer. Please try again later."
-                break;
-                return;
-            }
-          default:
-            std::cout << "Can't migrate, not the owner."
-        }
-      default:
-        std::cout << "No command found.";
-    } */
-    if (cmd == "[migrate]") {
-      if (isOwner == "1") {
-        cout << "Are you sure? [y/n] ";
-        cin >> answer1;
-        if (answer1 == 'y') {
-          cout << "No new updates\n";
-        } else if (answer1 == 'n') {
-          cout << ""; // Do nothing
-        } else
-          cout << "Can't compare answer. Please try again later.";
-          return 0;
-      } else if (isOwner != "true")
-        cout << "Can't migrate, not the owner.";
-    } else if (cmd != "[migrate]") {
-      cout << "No command found.";
-    }
-    main();
+    forevercode();
   }
 }
 

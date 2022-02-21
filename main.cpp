@@ -46,12 +46,12 @@ int main() {
       default:
         std::cout << "No command found.";
     } */
-    if (cmd == "migrate") { // <- Single quotes or duoble quotes? Double
-      if (isOwner == "true") {
-        cout << "Are you sure? [y/n]";
+    if (cmd == "[migrate]") {
+      if (isOwner == "1") {
+        cout << "Are you sure? [y/n] ";
         cin >> answer1;
         if (answer1 == 'y') {
-          cout << "No new updates";
+          cout << "No new updates\n";
         } else if (answer1 == 'n') {
           cout << ""; // Do nothing
         } else
@@ -59,9 +59,10 @@ int main() {
           return 0;
       } else if (isOwner != "true")
         cout << "Can't migrate, not the owner.";
-    } else if (cmd != "migrate") { // Here is the error
+    } else if (cmd != "[migrate]") {
       cout << "No command found.";
     }
+    main();
   }
 }
 

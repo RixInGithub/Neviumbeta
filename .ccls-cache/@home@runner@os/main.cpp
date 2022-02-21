@@ -2,10 +2,9 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <filesystem>
 #include <unistd.h>
 #include <stdio.h>
-#include "start.hpp"
+#include "oscfg.hpp"
 /* using std::cout; using std::cin;
 using std::endl; using std::string;
 namespace fs = std::filesystem;
@@ -18,53 +17,52 @@ char answer1 = '?';
 
 int main() {
   start();
-  cout << "\033[0;32m" << ") ";
-  cin >> cmd;
-  
-  /* switch(cmd) {
-    case "migrate":
-      
-      switch(isOwner) {
-        case "true":
-          std::string answer1;
-          std::cout << "Are you sure? [y/n] ";
-          
-          switch(answer1) {
-            case "y":
-              std::cout << "No new updates";
-              break;
-            case "n":
-              break;
-            default:
-              std::cout << "Can't compare answer. Please try again later."
-              break;
-              return;
-          }
-        default:
-          std::cout << "Can't migrate, not the owner."
-      }
-    default:
-      std::cout << "No command found.";
-  } */
-  if (cmd == "migrate") { // <- Single quotes or duoble quotes? Double
-    if (isOwner == "true") {
-      cout << "Are you sure? [y/n]";
-      cin >> answer1;
-      if (answer1 == 'y') {
-        cout << "No new updates";
-      } else if (answer1 == 'n') {
-        cout << ""; // Do nothing
-      } else
-       cout << "Can't compare answer. Please try again later.";
-        return 0;
-    } else if (isOwner != "true")
-      std::cout << "Can't migrate, not the owner.";
-  } else if (cmd != "migrate") { // Here is the error
-    std::cout << "No command found.";
+  while (true) {
+    cout << "\033[0;32m" << ") ";
+    cin >> cmd;
+    
+    /* switch(cmd) {
+      case "migrate":
+        
+        switch(isOwner) {
+          case "true":
+            std::string answer1;
+            std::cout << "Are you sure? [y/n] ";
+            
+            switch(answer1) {
+              case "y":
+                std::cout << "No new updates";
+                break;
+              case "n":
+                break;
+              default:
+                std::cout << "Can't compare answer. Please try again later."
+                break;
+                return;
+            }
+          default:
+            std::cout << "Can't migrate, not the owner."
+        }
+      default:
+        std::cout << "No command found.";
+    } */
+    if (cmd == "[migrate]") {
+      if (isOwner == "true") {
+        cout << "Are you sure? [y/n]";
+        cin >> answer1;
+        if (answer1 == 'y') {
+          cout << "No new updates";
+        } else if (answer1 == 'n') {
+          cout << ""; // Do nothing
+        } else
+          cout << "Can't compare answer. Please try again later.";
+          return 0;
+      } else if (isOwner != "true")
+        cout << "Can't migrate, not the owner.";
+    } else if (cmd != "[migrate]") {
+      cout << "No command found.";
+    }
   }
-  main();
-
-  return 0;
 }
 
 /* void start() {

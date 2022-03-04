@@ -16,7 +16,7 @@ If you are sure you meet these requirements, you can download Nevium [as a .ZIP 
 You can also install Nevium using `git`:
 
 ```sh
-rmdir Neviumbeta # Get latest Nevium
+rm -rf Neviumbeta # Get latest Nevium
 sleep .5s
 git clone https://github.com/RixInGithub/Neviumbeta.git
 cd Neviumbeta
